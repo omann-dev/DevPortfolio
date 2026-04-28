@@ -1,57 +1,73 @@
+import type { Theme } from "../App";
 import type { Language } from "../translations";
+import ThemeSwitch from "./ThemeSwitch";
 
 type HeaderProps = {
-    language: Language;
-    setLanguage: (Language: Language) => void;
-    nav: {
-        about: string;
-        projects: string;
-        skills: string;
-        contact: string;
-    };
+  language: Language;
+  setLanguage: (language: Language) => void;
+  nav: {
+    about: string;
+    projects: string;
+    skills: string;
+    contact: string;
+  };
+  theme: Theme;
+  setTheme: (theme: Theme) => void;
 };
 
-function Header({ language, setLanguage, nav }: HeaderProps){
+function Header({
+  language,
+  setLanguage,
+  nav,
+  theme,
+  setTheme,
+}: HeaderProps) {
+  return (
+    <header>
+      <nav>
+        <a href="#about" className="logo">
+          Oliver Mann
+        </a>
 
-    return (
-        <header>
-            <nav>
-                <h1>Oliver Mann</h1>
+        <ul>
+          <li>
+            <a href="#about">{nav.about}</a>
+          </li>
+          <li>
+            <a href="#projects">{nav.projects}</a>
+          </li>
+          <li>
+            <a href="#skills">{nav.skills}</a>
+          </li>
+          <li>
+            <a href="#contact">{nav.contact}</a>
+          </li>
+        </ul>
 
-                <ul>
-                    <li>
-                        <a href="#about">{nav.about}</a>
-                    </li>
-                    <li>
-                        <a href="#projects">{nav.projects}</a>
-                    </li>
-                    <li>
-                        <a href="#skills">{nav.skills}</a>
-                    </li>
-                    <li>
-                        <a href="#contact">{nav.contact}</a>
-                    </li>
-                </ul>
+        <div className="header-actions">
+          <div className="language-switch">
+            <button
+              className={language === "en" ? "active" : ""}
+              onClick={() => setLanguage("en")}
+              type="button"
+            >
+              EN
+            </button>
 
-                <div className="language-switch">
-                    <button
-                        className={language === "en" ? "active" : ""}
-                        onClick={() => setLanguage("en")}
-                    >
-                        EN
-                    </button>
+            <button
+              className={language === "de" ? "active" : ""}
+              onClick={() => setLanguage("de")}
+              type="button"
+            >
+              DE
+            </button>
+          </div>
 
-                    <button
-                        className={language === "de" ? "active" : ""}
-                        onClick={() => setLanguage("de")}
-                    >
-                        DE
-                    </button>
-                </div>
-            </nav>
-
-        </header>
-    );
+          <ThemeSwitch theme={theme} setTheme={setTheme} />
+        </div>
+      </nav>
+    </header>
+  );
 }
 
 export default Header;
