@@ -35,3 +35,5 @@ Clone the repository:
 ```bash
 git clone https://github.com/USERNAME/portfolio.git
 cd portfolio
+npm install
+npm run dev
