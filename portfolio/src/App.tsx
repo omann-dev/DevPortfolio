@@ -1,23 +1,36 @@
-import Header from "./components/Header"
+import { useState } from "react";
+import Header from "./components/Header";
+import About from "./components/About";
+import { translations, type Language } from "./translations";
 
 function App() {
+  const [language, setLanguage] = useState<Language>("en");
+
+  const t = translations[language];
+
   return (
     <>
-      <Header />
+      <Header
+        language={language}
+        setLanguage={setLanguage}
+        nav={t.nav}
+      />
 
       <main>
-        <section id="about">
-          <h2>About</h2>
-        </section>
+        <About content={t.about} />
 
         <section id="projects">
-          <h2>Projects</h2>
+          <h2>{t.nav.projects}</h2>
         </section>
 
         <section id="skills">
-          <h2>Contact</h2>
+          <h2>{t.nav.skills}</h2>
         </section>
-      </main>  
+
+        <section id="contact">
+          <h2>{t.nav.contact}</h2>
+        </section>
+      </main>
     </>
   );
 }

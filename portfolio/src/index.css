@@ -45,3 +45,32 @@ nav a {
 nav a:hover {
   color: white;
 }
+
+.language-switch {
+  display: flex;
+  gap: 0.35rem;
+  padding: 0.25rem;
+  border: 1px solid #1e293b;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.8);
+}
+
+.language-switch button {
+  border: none;
+  border-radius: 999px;
+  padding: 0.35rem 0.65rem;
+  background: transparent;
+  color: #94a3b8;
+  font-size: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.language-switch button:hover {
+  color: #f8fafc;
+}
+
+.language-switch button.active {
+  background: #38bdf8;
+  color: #020617;
+}
