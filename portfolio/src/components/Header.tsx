@@ -11,7 +11,7 @@ type HeaderProps = {
     };
 };
 
-function Header({ language, setLanguage, nav }): HeaderProps{
+function Header({ language, setLanguage, nav }: HeaderProps){
 
     return (
         <header>
