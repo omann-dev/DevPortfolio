@@ -74,3 +74,91 @@ nav a:hover {
   background: #38bdf8;
   color: #020617;
 }
+
+.about-section {
+  min-height: 100vh;
+  padding: 6rem 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.about-container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.about-content {
+  max-width: 780px;
+}
+
+.section-label {
+  margin-bottom: 1rem;
+  color: #38bdf8;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.about-content h2 {
+  margin: 0 0 1.5rem;
+  font-size: clamp(2rem, 5vw, 4rem);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  color: #f8fafc;
+}
+
+.about-content p {
+  max-width: 680px;
+  margin: 0 0 1rem;
+  color: #cbd5e1;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.about-highlights {
+  margin-top: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.about-highlights div {
+  padding: 1.25rem;
+  border: 1px solid #1e293b;
+  border-radius: 1rem;
+  background: rgba(15, 23, 42, 0.7);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.about-highlights div:hover {
+  transform: translateY(-4px);
+  border-color: #38bdf8;
+}
+
+.about-highlights strong {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: #f8fafc;
+  font-size: 0.95rem;
+}
+
+.about-highlights span {
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 5rem 1.25rem;
+  }
+
+  .about-highlights {
+    grid-template-columns: 1fr;
+  }
+
+  .about-content h2 {
+    font-size: clamp(2rem, 10vw, 3rem);
+  }
+}
