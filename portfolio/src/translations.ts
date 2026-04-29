@@ -15,7 +15,7 @@ export const translations = {
       paragraph1:
         "I'm a computer science student and aspiring fullstack developer focused on .NET, TypeScript and modern UI development.",
       paragraph2:
-        "I enjoy building clean, practical applications — from APIs and databases to responsive frontends. My current work focuses on production data dashboards using ASP.NET Core, Entity Framework Core, SignalR and Avalonia.",
+        "I enjoy building clean, practical applications",
       highlights: {
         focusTitle: "Focus",
         focusText: "Fullstack Development",
@@ -127,7 +127,7 @@ export const translations = {
       paragraph1:
         "Ich bin Informatikstudent und angehender Fullstack-Entwickler mit Fokus auf .NET, TypeScript und moderne UI-Entwicklung.",
       paragraph2:
-        "Ich entwickle gerne praktische Anwendungen — von APIs und Datenbanken bis hin zu responsiven Frontends. Aktuell beschäftige ich mich mit Produktionsdaten-Dashboards auf Basis von ASP.NET Core, Entity Framework Core, SignalR und Avalonia.",
+        "Ich entwickle gerne praktische Anwendungen",
       highlights: {
         focusTitle: "Fokus",
         focusText: "Fullstack-Entwicklung",
