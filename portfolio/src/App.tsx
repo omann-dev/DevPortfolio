@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import About from "./components/About";
 import Skills from "./components/Skills";
+import Projects from "./components/Projects";
 import { translations, type Language } from "./translations";
 
 export type Theme = "dark" | "light";
@@ -26,12 +27,7 @@ function App() {
       <main>
         <About content={t.about} />
 
-        <section id="projects" className="page-section">
-          <div className="section-container">
-            <p className="section-label">{t.nav.projects}</p>
-            <h2>Projects</h2>
-          </div>
-        </section>
+        <Projects content={t.projects} />
 
         <Skills content={t.skills} />
 

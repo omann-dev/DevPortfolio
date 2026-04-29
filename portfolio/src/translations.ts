@@ -26,6 +26,53 @@ export const translations = {
       },
     },
 
+    projects: {
+      label: "Projects",
+      title: "Selected Projects",
+      intro:
+        "A selection of projects where I worked with modern frontend technologies, backend development and practical software architecture.",
+      sourceCode: "Source Code",
+      liveDemo: "Live Demo",
+      items: [
+        {
+          title: "Developer Portfolio",
+          category: "Frontend",
+          description:
+            "A personal portfolio built with React and TypeScript, including theme switching, multilingual content and reusable components.",
+          tags: ["React", "TypeScript", "CSS", "Responsive UI"],
+          highlights: [
+            "Dark and light theme support",
+            "German and English translations",
+            "Reusable component structure",
+          ],
+          links: [
+            {
+              label: "GitHub",
+              href: "https://github.com/omann-dev",
+            },
+          ],
+        },
+        {
+          title: "LearnDartsMath",
+          category: "Fullstack",
+          description:
+            "A darts training application focused on x01 score calculation, game flow and saving training sessions.",
+          tags: ["Vue", "TypeScript", "ASP.NET Core", "PostgreSQL"],
+          highlights: [
+            "Interactive score selection",
+            "JWT-based authentication concept",
+            "Backend API for training sessions",
+          ],
+          links: [
+            {
+              label: "GitHub",
+              href: "https://github.com/OliverIsBad/LearnDartsMath",
+            },
+          ],
+        },
+      ],
+    },
+
     skills: {
       label: "Skills",
       title: "Technologies & Tools",
@@ -89,6 +136,53 @@ export const translations = {
         currentTitle: "Aktuell",
         currentText: "Bachelorarbeit & Portfolio-Projekte",
       },
+    },
+
+    projects: {
+      label: "Projekte",
+      title: "Ausgewählte Projekte",
+      intro:
+        "Eine Auswahl an Projekten, in denen ich mit modernen Frontend-Technologien, Backend-Entwicklung und praxisnaher Softwarearchitektur gearbeitet habe.",
+      sourceCode: "Quellcode",
+      liveDemo: "Live Demo",
+      items: [
+        {
+          title: "Developer Portfolio",
+          category: "Frontend",
+          description:
+            "Ein persönliches Portfolio mit React und TypeScript, inklusive Theme-Switch, mehrsprachigen Inhalten und wiederverwendbaren Komponenten.",
+          tags: ["React", "TypeScript", "CSS", "Responsive UI"],
+          highlights: [
+            "Dark- und Light-Theme",
+            "Deutsche und englische Übersetzungen",
+            "Wiederverwendbare Komponentenstruktur",
+          ],
+          links: [
+            {
+              label: "GitHub",
+              href: "https://github.com/omann-dev",
+            },
+          ],
+        },
+        {
+          title: "LearnDartsMath",
+          category: "Fullstack",
+          description:
+            "Eine Darts-Trainingsanwendung mit Fokus auf x01-Score-Berechnung, Spiellogik und Speichern von Trainingseinheiten.",
+          tags: ["Vue", "TypeScript", "ASP.NET Core", "PostgreSQL"],
+          highlights: [
+            "Interaktive Score-Auswahl",
+            "JWT-basiertes Authentifizierungskonzept",
+            "Backend-API für Trainingseinheiten",
+          ],
+          links: [
+            {
+              label: "GitHub",
+              href: "https://github.com/OliverIsBad/LearnDartsMath",
+            },
+          ],
+        },
+      ],
     },
 
     skills: {
