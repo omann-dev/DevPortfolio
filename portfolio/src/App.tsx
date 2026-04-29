@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Header from "./components/Header";
 import About from "./components/About";
+import Skills from "./components/Skills";
 import { translations, type Language } from "./translations";
 
 export type Theme = "dark" | "light";
@@ -31,12 +32,7 @@ function App() {
           </div>
         </section>
 
-        <section id="skills" className="page-section">
-          <div className="section-container">
-            <p className="section-label">{t.nav.skills}</p>
-            <h2>Skills</h2>
-          </div>
-        </section>
+        <Skills content={t.skills} />
 
         <section id="contact" className="page-section">
           <div className="section-container">
