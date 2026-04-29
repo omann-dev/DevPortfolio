@@ -54,6 +54,16 @@ export const translations = {
           "I use Linux as a private and development environment, especially for terminal workflows and system configuration.",
       },
     },
+
+    footer: {
+      text: "Developer portfolio focused on clean UI, modern web technologies and practical software projects.",
+      madeWith: "Built with React and TypeScript.",
+      links: {
+        github: "GitHub",
+        linkedin: "LinkedIn",
+        email: "Email",
+      },
+    },
   },
 
   de: {
@@ -107,6 +117,16 @@ export const translations = {
           "Git nutze ich regelmäßig für Versionsverwaltung, Feature-Branches und strukturierte Zusammenarbeit.",
         linux:
           "Linux nutze ich privat und als Entwicklungsumgebung, besonders für Terminal-Workflows und Systemkonfiguration.",
+      },
+    },
+
+    footer: {
+      text: "Entwicklerportfolio mit Fokus auf saubere Benutzeroberflächen, moderne Webtechnologien und praxisnahe Softwareprojekte.",
+      madeWith: "Erstellt mit React und TypeScript.",
+      links: {
+        github: "GitHub",
+        linkedin: "LinkedIn",
+        email: "E-Mail",
       },
     },
   },
