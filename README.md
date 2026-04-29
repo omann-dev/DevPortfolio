@@ -14,11 +14,13 @@ Feel free to use this repo as a starting point for your own developer portfolio.
 
 ### Dark Mode
 
-![Dark Mode Preview](./public/SkillsDarkDemo.png)
+![Dark Mode Preview](./portfolio/public/AboutDarkDemo.png)
+![Dark Mode Preview](./portfolio/public/SkillsDarkDemo.png)
 
 ### Light Mode
 
-![Light Mode Preview](./public/SkillsLightDemo.png)
+![Light Mode Preview](./portfolio/public/AboutLightDemo.png)
+![Light Mode Preview](./portfolio/public/SkillsLightDemo.png)
 
 ---
 
@@ -51,4 +53,4 @@ Feel free to use this repo as a starting point for your own developer portfolio.
 Clone the repo:
 
 ```bash
-git clone https://github.com/omann-dev/YOUR-REPOSITORY-NAME.git
+git clone https://github.com/omann-dev/DevPortfolio.git
