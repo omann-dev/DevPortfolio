@@ -1,17 +1,40 @@
-# Personal Portfolio
+# Developer Portfolio
 
-A modern personal developer portfolio built with React, TypeScript and Vite.  
-The goal of this project is to present my skills, projects and experience in a clean, responsive and professional way.
+Hey 👋  
+this is my personal developer portfolio built with **React**, **TypeScript** and plain **CSS**.
 
-## Features
+I built this project to present myself, my projects and the technologies I work with.  
+The portfolio includes a dark/light theme switch, German and English translations, reusable components and interactive sections for skills and projects.
 
-- Responsive single-page layout
-- Dark and light theme switch
-- English and German language switch
-- Smooth section navigation
-- Reusable React components
-- Clean CSS with theme variables
-- Prepared for deployment on Vercel
+Feel free to use this repo as a starting point for your own developer portfolio.
+
+---
+
+## Preview
+
+### Dark Mode
+
+![Dark Mode Preview](./public/SkillsDarkDemo.png)
+
+### Light Mode
+
+![Light Mode Preview](./public/SkillsLightDemo.png)
+
+---
+
+## What you get
+
+- Responsive portfolio layout
+- React + TypeScript setup
+- Dark and light mode
+- German and English language switch
+- Reusable components
+- Project cards generated from content data
+- Interactive skills section
+- Footer with GitHub, LinkedIn and email links
+- Clean structure so you can easily customize it
+
+---
 
 ## Tech Stack
 
@@ -19,21 +42,13 @@ The goal of this project is to present my skills, projects and experience in a c
 - TypeScript
 - Vite
 - CSS
-- Vercel
+- Devicon Icons
 
-## Sections
+---
 
-- About
-- Projects
-- Skills
-- Contact
+## Getting started
 
-## Getting Started
-
-Clone the repository:
+Clone the repo:
 
 ```bash
-git clone https://github.com/USERNAME/portfolio.git
-cd portfolio
-npm install
-npm run dev
+git clone https://github.com/omann-dev/YOUR-REPOSITORY-NAME.git
