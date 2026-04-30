@@ -467,3 +467,26 @@ nav a:hover {
     font-size: clamp(2rem, 10vw, 3rem);
   }
 }
+
+main,
+.footer,
+nav ul,
+.header-actions {
+  transition:
+    filter 0.25s ease,
+    opacity 0.25s ease,
+    transform 0.25s ease;
+}
+
+.app:has(.profile-hover-card:hover) main,
+.app:has(.profile-hover-card:focus-within) main,
+.app:has(.profile-hover-card:hover) .footer,
+.app:has(.profile-hover-card:focus-within) .footer,
+.app:has(.profile-hover-card:hover) nav ul,
+.app:has(.profile-hover-card:focus-within) nav ul,
+.app:has(.profile-hover-card:hover) .header-actions,
+.app:has(.profile-hover-card:focus-within) .header-actions {
+  filter: blur(4px);
+  opacity: 0.45;
+  transform: scale(0.995);
+}
