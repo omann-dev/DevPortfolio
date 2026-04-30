@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import About from "./components/About";
 import Skills from "./components/Skills";
+import Contact from "./components/Contact";
 import Projects from "./components/Projects";
 import { translations, type Language } from "./translations";
 
@@ -31,12 +32,8 @@ function App() {
 
         <Skills content={t.skills} />
 
-        <section id="contact" className="page-section">
-          <div className="section-container">
-            <p className="section-label">{t.nav.contact}</p>
-            <h2>Contact</h2>
-          </div>
-        </section>
+        <Contact content={t.contact} />
+
       </main>
       <Footer content={t.footer} />
     </div>

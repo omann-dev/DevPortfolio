@@ -102,6 +102,22 @@ export const translations = {
       },
     },
 
+    contact: {
+      label: "Contact",
+      title: "Let’s connect.",
+      text: "You can find my work on GitHub or connect with me on LinkedIn.",
+      links: {
+        github: {
+          label: "GitHub",
+          href: "https://github.com/omann-dev",
+        },
+        linkedin: {
+          label: "LinkedIn",
+          href: "https://www.linkedin.com/in/oliver-mann-12b465405/",
+        },
+      },
+    },
+
     footer: {
       text: "Developer portfolio focused on clean UI, modern web technologies and practical software projects.",
       madeWith: "Built with React and TypeScript.",
@@ -211,6 +227,22 @@ export const translations = {
           "Git nutze ich regelmäßig für Versionsverwaltung, Feature-Branches und strukturierte Zusammenarbeit.",
         linux:
           "Linux nutze ich privat und als Entwicklungsumgebung, besonders für Terminal-Workflows und Systemkonfiguration.",
+      },
+    },
+
+    contact: {
+      label: "Kontakt",
+      title: "Lass uns vernetzen.",
+      text: "Meine Projekte findest du auf GitHub. Auf LinkedIn kannst du dich gerne mit mir vernetzen.",
+      links: {
+        github: {
+          label: "GitHub",
+          href: "https://github.com/omann-dev",
+        },
+        linkedin: {
+          label: "LinkedIn",
+          href: "https://www.linkedin.com/in/oliver-mann-12b465405/",
+        },
       },
     },
 
