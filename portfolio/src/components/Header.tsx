@@ -1,6 +1,7 @@
 import type { Theme } from "../App";
 import type { Language } from "../translations";
 import ThemeSwitch from "./ThemeSwitch";
+import ProfileHoverCard from "./ProfileHoverCard";
 
 type HeaderProps = {
   language: Language;
@@ -25,9 +26,19 @@ function Header({
   return (
     <header>
       <nav>
-        <a href="#about" className="logo">
-          Oliver Mann
-        </a>
+        <ProfileHoverCard
+          name="Oliver Mann"
+          role="Software Developer"
+          imageSrc="./public/ProfilePicture.png"
+          studiesLabel="Studies"
+          studies="Computer Science at HSBI"
+          graduationLabel="Graduation"
+          graduation="Expected June 2026"
+          links={{
+            github: "https://github.com/omann-dev",
+            linkedin: "https://www.linkedin.com/in/oliver-mann-12b465405/",
+          }}
+        />
 
         <ul>
           <li>
