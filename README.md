@@ -3,6 +3,8 @@
 Hey 👋  
 this is my personal developer portfolio built with **React**, **TypeScript** and plain **CSS**.
 
+You can check it out on: https://dev-portfolio-chi-six.vercel.app/#about
+
 I built this project to present myself, my projects and the technologies I work with.  
 The portfolio includes a dark/light theme switch, German and English translations, reusable components and interactive sections for skills and projects.
 
