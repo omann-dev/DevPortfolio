@@ -29,7 +29,7 @@ function Header({
         <ProfileHoverCard
           name="Oliver Mann"
           role="Software Developer"
-          imageSrc="./public/ProfilePicture.png"
+          imageSrc="./ProfilePicture.png"
           studiesLabel="Studies"
           studies="Computer Science at HSBI"
           graduationLabel="Graduation"
