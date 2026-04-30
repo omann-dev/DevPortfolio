@@ -10,8 +10,7 @@ export const translations = {
     },
     about: {
       label: "About me",
-      headline:
-        "I build clean applications with a focus on data, dashboards and modern user interfaces.",
+      headline: "Building practical software with clean interfaces and meaningful data.",
       paragraph1:
         "I'm a computer science student and aspiring fullstack developer focused on .NET, TypeScript and modern UI development.",
       paragraph2:
@@ -138,8 +137,7 @@ export const translations = {
     },
     about: {
       label: "Über mich",
-      headline:
-        "Ich entwickle saubere Anwendungen mit Fokus auf Daten, Dashboards und moderne Benutzeroberflächen.",
+      headline: "Ich entwickle praxisnahe Software mit klaren Oberflächen und sinnvollen Daten.",
       paragraph1:
         "Ich bin Informatikstudent und angehender Fullstack-Entwickler mit Fokus auf .NET, TypeScript und moderne UI-Entwicklung.",
       paragraph2:
