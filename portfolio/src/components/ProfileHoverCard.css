@@ -4,6 +4,81 @@
   align-items: center;
 }
 
+.profile-trigger {
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  padding: 0.55rem 0.85rem;
+  text-align: left;
+
+  display: inline-flex;
+  flex-direction: column;
+
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.profile-trigger:hover,
+.profile-trigger:focus-visible {
+  border-color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 8%, transparent);
+  transform: translateY(-1px);
+  box-shadow: 0 0.75rem 2rem rgba(0, 0, 0, 0.12);
+  outline: none;
+}
+
+.profile-name-row {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.profile-name {
+  color: var(--text);
+  font-size: 1.1rem;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+}
+
+.profile-availability-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 1.55rem;
+  height: 1.55rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+
+  color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 12%, transparent);
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.profile-trigger:hover .profile-availability-icon,
+.profile-trigger:focus-visible .profile-availability-icon {
+  transform: translateY(-1px);
+  border-color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 20%, transparent);
+}
+
+.profile-trigger-role {
+  display: block;
+  margin-top: 0.2rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
 /* BIG Profile Popover */
 .profile-popover {
   position: absolute;
