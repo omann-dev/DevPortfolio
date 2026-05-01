@@ -1,3 +1,5 @@
+import "./ProfileHoverCard.css";
+
 type ProfileHoverCardProps = {
   name: string;
   role: string;
@@ -23,13 +25,13 @@ function ProfileHoverCard({
   links,
 }: ProfileHoverCardProps) {
   return (
-    <div className="profile-hover-wrapper">
+    <div className="profile-hover-card">
       <button className="profile-trigger" type="button" aria-label="Open profile card">
         <div className="profile-name-row">
           <span className="profile-name">{name}</span>
 
           <span
-            className="profile-icon"
+            className="profile-availability-icon"
             aria-label="Profile available"
             title="Profile available"
           >
@@ -50,27 +52,29 @@ function ProfileHoverCard({
           </span>
         </div>
 
-        <span className="profile-role">{role}</span>
+        <span className="profile-trigger-role">{role}</span>
       </button>
 
-      <div className="profile-card">
-        <img src={imageSrc} alt={name} className="profile-image" />
+      <div className="profile-popover">
+        <img className="profile-popover-image" src={imageSrc} alt={name} />
 
-        <div className="profile-card-content">
-          <h2>{name}</h2>
-          <p className="profile-card-role">{role}</p>
+        <div className="profile-popover-content">
+          <strong>{name}</strong>
+          <span className="profile-role">{role}</span>
 
-          <div className="profile-info">
-            <span>{studiesLabel}</span>
-            <p>{studies}</p>
+          <div className="profile-meta">
+            <p>
+              <span>{studiesLabel}</span>
+              {studies}
+            </p>
+
+            <p>
+              <span>{graduationLabel}</span>
+              {graduation}
+            </p>
           </div>
 
-          <div className="profile-info">
-            <span>{graduationLabel}</span>
-            <p>{graduation}</p>
-          </div>
-
-          <div className="profile-links">
+          <div className="profile-socials">
             <a href={links.github} target="_blank" rel="noreferrer">
               GitHub
             </a>
