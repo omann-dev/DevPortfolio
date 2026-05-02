@@ -1,4 +1,4 @@
-import type { Theme } from "../App";
+import type { ThemeMode } from "../App";
 import type { Language } from "../translations";
 import ThemeSwitch from "./ThemeSwitch";
 import ProfileHoverCard from "./ProfileHoverCard";
@@ -13,8 +13,8 @@ type HeaderProps = {
     skills: string;
     contact: string;
   };
-  theme: Theme;
-  setTheme: (theme: Theme) => void;
+  theme: ThemeMode;
+  setTheme: (theme: ThemeMode) => void;
 };
 
 function Header({
