@@ -1,0 +1,56 @@
+import { useState } from "react";
+import "./headermenu.css";
+
+function HeaderMenu() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <div className="header-menu">
+      <button
+        className="header-menu-toggle"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded={isOpen}
+        onClick={() => setIsOpen(true)}
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div
+        className={`header-menu-backdrop ${isOpen ? "open" : ""}`}
+        onClick={() => setIsOpen(false)}
+      />
+
+      <aside className={`header-menu-drawer ${isOpen ? "open" : ""}`}>
+        <div className="header-menu-top">
+          <span className="header-menu-title">Menu</span>
+
+          <button
+            className="header-menu-close"
+            type="button"
+            aria-label="Close menu"
+            onClick={() => setIsOpen(false)}
+          >
+            ×
+          </button>
+        </div>
+
+        <div className="header-menu-list">
+          <button className="header-menu-entry" type="button">
+            <span>Download my CV</span>
+            <span className="header-menu-arrow">›</span>
+          </button>
+
+          <button className="header-menu-entry" type="button">
+            <span>Themes</span>
+            <span className="header-menu-arrow">›</span>
+          </button>
+        </div>
+      </aside>
+    </div>
+  );
+}
+
+export default HeaderMenu;

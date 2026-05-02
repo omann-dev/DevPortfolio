@@ -2,6 +2,7 @@ import type { Theme } from "../App";
 import type { Language } from "../translations";
 import ThemeSwitch from "./ThemeSwitch";
 import ProfileHoverCard from "./ProfileHoverCard";
+import HeaderMenu from "./HeaderMenu";
 
 type HeaderProps = {
   language: Language;
@@ -75,6 +76,8 @@ function Header({
           </div>
 
           <ThemeSwitch theme={theme} setTheme={setTheme} />
+
+          <HeaderMenu />
         </div>
       </nav>
     </header>
