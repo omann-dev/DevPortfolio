@@ -43,16 +43,16 @@ function Header({
 
         <ul>
           <li>
-            <a href="#about">{nav.about}</a>
+            <a href="/#about">{nav.about}</a>
           </li>
           <li>
-            <a href="#projects">{nav.projects}</a>
+            <a href="/#projects">{nav.projects}</a>
           </li>
           <li>
-            <a href="#skills">{nav.skills}</a>
+            <a href="/#skills">{nav.skills}</a>
           </li>
           <li>
-            <a href="#contact">{nav.contact}</a>
+            <a href="/#contact">{nav.contact}</a>
           </li>
         </ul>
 
