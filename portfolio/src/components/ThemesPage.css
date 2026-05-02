@@ -1,0 +1,164 @@
+/* Themes Page */
+
+.themes-grid {
+  margin-top: 2.5rem;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+}
+
+.theme-card {
+  position: relative;
+  overflow: hidden;
+
+  min-height: 190px;
+  padding: 1.25rem;
+
+  border: 1px solid var(--border);
+  border-radius: 1.35rem;
+
+  background:
+    linear-gradient(
+      135deg,
+      color-mix(in srgb, var(--accent) 10%, transparent),
+      transparent 65%
+    ),
+    var(--surface);
+
+  color: var(--text);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.25rem;
+
+  transition:
+    transform 0.22s ease,
+    border-color 0.22s ease,
+    background 0.22s ease,
+    box-shadow 0.22s ease;
+}
+
+.theme-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent);
+  background:
+    linear-gradient(
+      135deg,
+      color-mix(in srgb, var(--accent) 16%, transparent),
+      transparent 65%
+    ),
+    var(--surface-solid);
+
+  box-shadow: 0 1.5rem 3.5rem rgba(0, 0, 0, 0.18);
+}
+
+.theme-card.active {
+  border-color: var(--accent);
+  background:
+    linear-gradient(
+      135deg,
+      color-mix(in srgb, var(--accent) 18%, transparent),
+      transparent 70%
+    ),
+    var(--surface-solid);
+}
+
+.theme-card.active::after {
+  content: "Selected";
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+
+  padding: 0.3rem 0.6rem;
+  border-radius: 999px;
+
+  background: var(--accent);
+  color: var(--accent-text);
+
+  font-size: 0.7rem;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.theme-card h3 {
+  margin: 0 0 0.4rem;
+
+  color: var(--text);
+  font-size: 1.2rem;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+}
+
+.theme-card p {
+  max-width: 90%;
+  margin: 0;
+
+  color: var(--subtle);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.theme-card-actions {
+  display: flex;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+}
+
+.theme-card-actions button {
+  border: 1px solid var(--border);
+  border-radius: 999px;
+
+  padding: 0.5rem 0.85rem;
+
+  background: color-mix(in srgb, var(--surface-solid) 70%, transparent);
+  color: var(--muted);
+
+  cursor: pointer;
+
+  font-size: 0.85rem;
+  font-weight: 800;
+
+  transition:
+    color 0.2s ease,
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.theme-card-actions button:hover {
+  color: var(--text);
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.theme-card-actions button.active {
+  color: var(--accent-text);
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.theme-card-actions button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .themes-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .theme-card {
+    min-height: 165px;
+  }
+
+  .theme-card.active::after {
+    position: static;
+    width: fit-content;
+    margin-bottom: 0.75rem;
+  }
+}

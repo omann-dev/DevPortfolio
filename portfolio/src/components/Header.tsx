@@ -1,7 +1,8 @@
-import type { Theme } from "../App";
+import type { ThemeMode } from "../App";
 import type { Language } from "../translations";
 import ThemeSwitch from "./ThemeSwitch";
 import ProfileHoverCard from "./ProfileHoverCard";
+import HeaderMenu from "./HeaderMenu";
 
 type HeaderProps = {
   language: Language;
@@ -12,8 +13,8 @@ type HeaderProps = {
     skills: string;
     contact: string;
   };
-  theme: Theme;
-  setTheme: (theme: Theme) => void;
+  theme: ThemeMode;
+  setTheme: (theme: ThemeMode) => void;
 };
 
 function Header({
@@ -42,16 +43,16 @@ function Header({
 
         <ul>
           <li>
-            <a href="#about">{nav.about}</a>
+            <a href="/#about">{nav.about}</a>
           </li>
           <li>
-            <a href="#projects">{nav.projects}</a>
+            <a href="/#projects">{nav.projects}</a>
           </li>
           <li>
-            <a href="#skills">{nav.skills}</a>
+            <a href="/#skills">{nav.skills}</a>
           </li>
           <li>
-            <a href="#contact">{nav.contact}</a>
+            <a href="/#contact">{nav.contact}</a>
           </li>
         </ul>
 
@@ -75,6 +76,8 @@ function Header({
           </div>
 
           <ThemeSwitch theme={theme} setTheme={setTheme} />
+
+          <HeaderMenu />
         </div>
       </nav>
     </header>

@@ -27,7 +27,11 @@ a {
     color 0.25s ease;
 }
 
-.app.dark {
+/* =========================
+   STANDARD THEME
+   ========================= */
+
+.app.dark.theme-standard {
   --bg: #020617;
   --bg-glow: rgba(56, 189, 248, 0.12);
 
@@ -44,7 +48,7 @@ a {
   --accent-text: #020617;
 }
 
-.app.light {
+.app.light.theme-standard {
   --bg: #f8fafc;
   --bg-glow: rgba(37, 99, 235, 0.12);
 
@@ -58,6 +62,120 @@ a {
   --subtle: #64748b;
 
   --accent: #2563eb;
+  --accent-text: #ffffff;
+}
+
+/* =========================
+   OCEAN THEME
+   ========================= */
+
+.app.dark.theme-ocean {
+  --bg: #031926;
+  --bg-glow: rgba(20, 184, 166, 0.16);
+
+  --header-bg: rgba(3, 25, 38, 0.86);
+  --surface: rgba(7, 37, 54, 0.75);
+  --surface-solid: #041c2b;
+
+  --border: #164e63;
+  --text: #ecfeff;
+  --muted: #a5f3fc;
+  --subtle: #67e8f9;
+
+  --accent: #14b8a6;
+  --accent-text: #042f2e;
+}
+
+.app.light.theme-ocean {
+  --bg: #ecfeff;
+  --bg-glow: rgba(20, 184, 166, 0.18);
+
+  --header-bg: rgba(236, 254, 255, 0.86);
+  --surface: rgba(255, 255, 255, 0.82);
+  --surface-solid: #ffffff;
+
+  --border: #a5f3fc;
+  --text: #083344;
+  --muted: #155e75;
+  --subtle: #0e7490;
+
+  --accent: #0d9488;
+  --accent-text: #ffffff;
+}
+
+/* =========================
+   FOREST THEME
+   ========================= */
+
+.app.dark.theme-forest {
+  --bg: #07130d;
+  --bg-glow: rgba(34, 197, 94, 0.14);
+
+  --header-bg: rgba(7, 19, 13, 0.86);
+  --surface: rgba(20, 83, 45, 0.22);
+  --surface-solid: #0b1f14;
+
+  --border: #14532d;
+  --text: #f0fdf4;
+  --muted: #bbf7d0;
+  --subtle: #86efac;
+
+  --accent: #22c55e;
+  --accent-text: #052e16;
+}
+
+.app.light.theme-forest {
+  --bg: #f0fdf4;
+  --bg-glow: rgba(34, 197, 94, 0.16);
+
+  --header-bg: rgba(240, 253, 244, 0.86);
+  --surface: rgba(255, 255, 255, 0.82);
+  --surface-solid: #ffffff;
+
+  --border: #bbf7d0;
+  --text: #052e16;
+  --muted: #166534;
+  --subtle: #15803d;
+
+  --accent: #16a34a;
+  --accent-text: #ffffff;
+}
+
+/* =========================
+   ROSE THEME
+   ========================= */
+
+.app.dark.theme-rose {
+  --bg: #190711;
+  --bg-glow: rgba(244, 114, 182, 0.16);
+
+  --header-bg: rgba(25, 7, 17, 0.86);
+  --surface: rgba(80, 7, 36, 0.35);
+  --surface-solid: #220817;
+
+  --border: #831843;
+  --text: #fff1f2;
+  --muted: #fecdd3;
+  --subtle: #fda4af;
+
+  --accent: #f472b6;
+  --accent-text: #500724;
+}
+
+.app.light.theme-rose {
+  --bg: #fff1f2;
+  --bg-glow: rgba(244, 114, 182, 0.18);
+
+  --header-bg: rgba(255, 241, 242, 0.86);
+  --surface: rgba(255, 255, 255, 0.82);
+  --surface-solid: #ffffff;
+
+  --border: #fecdd3;
+  --text: #500724;
+  --muted: #9f1239;
+  --subtle: #be123c;
+
+  --accent: #e11d48;
   --accent-text: #ffffff;
 }
 
