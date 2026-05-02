@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./headermenu.css";
 
 
@@ -15,6 +16,13 @@ const handleDownloadCv = () => {
 
 function HeaderMenu() {
   const [isOpen, setIsOpen] = useState(false);
+
+  const navigate = useNavigate();
+
+  const handleOpenThemes = () => {
+    setIsOpen(false);
+    navigate("/themes");
+  }
 
 
   return (
@@ -56,7 +64,7 @@ function HeaderMenu() {
             <span className="header-menu-arrow">›</span>
           </button>
 
-          <button className="header-menu-entry" type="button">
+          <button className="header-menu-entry" type="button" onClick={handleOpenThemes}>
             <span>Themes</span>
             <span className="header-menu-arrow">›</span>
           </button>
