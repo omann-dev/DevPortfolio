@@ -1,8 +1,21 @@
 import { useState } from "react";
 import "./headermenu.css";
 
+
+
+const handleDownloadCv = () => {
+  const link = document.createElement("a");
+  link.href = "/CVDevPortfolio.pdf";
+  link.download = "CVDevPortfolio.pdf";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
+
+
 function HeaderMenu() {
   const [isOpen, setIsOpen] = useState(false);
+
 
   return (
     <div className="header-menu">
@@ -38,7 +51,7 @@ function HeaderMenu() {
         </div>
 
         <div className="header-menu-list">
-          <button className="header-menu-entry" type="button">
+          <button className="header-menu-entry" type="button" onClick={handleDownloadCv}>
             <span>Download my CV</span>
             <span className="header-menu-arrow">›</span>
           </button>
