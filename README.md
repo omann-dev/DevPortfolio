@@ -1,14 +1,9 @@
 # Developer Portfolio
 
-Hey 👋  
-this is my personal developer portfolio built with **React**, **TypeScript** and plain **CSS**.
+Personal developer portfolio built with **React**, **TypeScript**, **Vite** and plain **CSS**.
 
-You can check it out on: https://dev-portfolio-chi-six.vercel.app/#about
-
-I built this project to present myself, my projects and the technologies I work with.  
-The portfolio includes a dark/light theme switch, German and English translations, reusable components and interactive sections for skills and projects.
-
-Feel free to use this repo as a starting point for your own developer portfolio.
+Live version:  
+https://dev-portfolio-chi-six.vercel.app
 
 ---
 
@@ -16,27 +11,25 @@ Feel free to use this repo as a starting point for your own developer portfolio.
 
 ### Dark Mode
 
-![Dark Mode Preview](./portfolio/public/AboutDarkDemo.png)
-![Dark Mode Preview](./portfolio/public/SkillsDarkDemo.png)
+![About Dark](./portfolio/public/AboutDarkDemo.png)
+![Skills Dark](./portfolio/public/SkillsDarkDemo.png)
 
 ### Light Mode
 
-![Light Mode Preview](./portfolio/public/AboutLightDemo.png)
-![Light Mode Preview](./portfolio/public/SkillsLightDemo.png)
+![About Light](./portfolio/public/AboutLightDemo.png)
+![Skills Light](./portfolio/public/SkillsLightDemo.png)
 
 ---
 
-## What you get
+## Features
 
-- Responsive portfolio layout
-- React + TypeScript setup
-- Dark and light mode
+- Responsive layout
 - German and English language switch
-- Reusable components
-- Project cards generated from content data
-- Interactive skills section
-- Footer with GitHub, LinkedIn and email links
-- Clean structure so you can easily customize it
+- Dark and light mode
+- Multiple color themes
+- Project and skills sections
+- CV download
+- React Router navigation
 
 ---
 
@@ -46,13 +39,33 @@ Feel free to use this repo as a starting point for your own developer portfolio.
 - TypeScript
 - Vite
 - CSS
-- Devicon Icons
+- React Router
+- Vercel
 
 ---
 
-## Getting started
-
-Clone the repo:
+## Getting Started
 
 ```bash
 git clone https://github.com/omann-dev/DevPortfolio.git
+cd DevPortfolio/portfolio
+npm install
+npm run dev
+```
+
+---
+
+## Build
+
+```bash
+npm run build
+```
+
+---
+
+## Author
+
+**Oliver Mann**
+
+GitHub: https://github.com/omann-dev  
+Portfolio: https://dev-portfolio-chi-six.vercel.app
